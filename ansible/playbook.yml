@@ -1,6 +1,8 @@
 # file: ansible/playbook.yml
 ---
  - hosts: all
+   become: true
+   become_method: sudo
 
    roles:
     - init
